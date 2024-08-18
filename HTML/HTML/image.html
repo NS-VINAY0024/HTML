@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image tags</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1721265576553-e7f8242fc915?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px" alt="no image">
+    <img src="./Hanuma.jpg" width="300px" alt="no image">
+    <picture>
+        <source media="(min-width : 500px)" srcset="./Hanuma.jpg"/>
+        <source media="(min-width : 600px)" srcset="https://image.unsplash.com/photo-1721265576553-e7f8242fc915?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <img src="./Hanuma.jpg" alt="no image">
+    </picture>
+
+    <!-- Image map generator -->
+
+    <img src="Hanuman.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="209,111,306,221" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="174,269,70" shape="circle">
+        <area onclick="three()" target="" alt="" title="" href="" coords="249,428,97,369" shape="0">
+    </map>
+    <script>
+        function one(){
+            alert("Image 1 clicked");
+        }
+        function two(){
+            alert("Image 2 clicked");
+        }
+        function three(){
+            alert("Image 3 clicked");
+        }
+    </script>
+</body> 
+</html>

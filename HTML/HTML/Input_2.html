@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>forms one</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" method="get" accept-charset="utf-16" autocomplete="off" enctype="">
+        <label for="name">Name:</label> <br/>
+        <input type="text" placeholder="NAME" name="" id="name" /><br/>
+        
+        <label for="date">DoB</label> <br/>
+        <input type="date" name="" id="date"/><br/>
+
+        <select name="Editors" id="" title="Select an editor">
+            <option value="">Select an editor</option>
+            <option value="1">VS code</option>
+            <option value="2">Notepad ++</option>
+            <option value="3">Camand prompt</option>    
+        </select> <br/>
+
+        <input list="Editor" name="Editor" title="Select an editor" />
+        <datalist id="Editor">
+            <option value="VS code"></option>
+            <option value="Notepad ++"></option>
+            <option value="Camand prompt"></option>
+        </datalist><br/>
+
+        <input type="reset" value="reset" />
+        <button type="submit">Submit</button><br/>
+    </form>
+</body>
+</html>
