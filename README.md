@@ -1,2 +1,2 @@
 # HTML
-Learned HTML using YouTube
+Learning HTML and Creating Projects through YouTube.
